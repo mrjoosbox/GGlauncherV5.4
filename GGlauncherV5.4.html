@@ -1,0 +1,255 @@
+<html lang="en">
+    <head>
+      <script>
+        // Array of title choices
+        const titleChoices = ["Freezenova", "Pizzaedition", "roblox-unblocked"];
+    
+        // Get a random index from the array
+        const randomIndex = Math.floor(Math.random() * titleChoices.length);
+    
+        // Set the document title to the randomly chosen title
+        document.title = titleChoices[randomIndex];
+      </script>
+    </head>
+          
+    <head>
+    <style>
+        a {
+            color: #ff00ff;
+            text-decoration: none;
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; 
+        }
+
+        #clock {
+            position: fixed;
+            top: 20px; 
+            right: 20px; 
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white;
+            font-size: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 000, 255, 0.3);
+            z-index: 1000; 
+        }
+
+    </style>
+    <style type="text/css" id="operaUserStyle"></style></head>
+    <body>
+
+    <div id="clock">18:22:10</div>
+
+    <script>
+    function updateClock() {
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+        let period = "AM";
+
+        if (hours >= 12) {
+            period = "PM";
+            if (hours > 12) {
+                hours -= 12; // 
+            }
+        } else if (hours === 0) {
+            hours = 12; 
+        }
+
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        const timeString = hours + ':' + minutes + ':' + seconds + ' ' + period;
+
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+
+    updateClock();
+    </script>
+
+
+
+
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') {
+                window.location.href = 'https://www.google.com';
+            }
+        });
+    </script>
+    <style>
+    iframe { 
+      height: 700;
+      width: 750;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background: #000000;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #ffffff;
+            position: relative;
+            overflow-y: auto; 
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(5px);
+            padding: 3rem 4rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+            text-align: center;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            animation: pulseGlow 4s infinite;
+        }
+
+        /* Rainbow pulse effect */
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 30px red;
+            }
+            14% {
+                box-shadow: 0 0 30px orange;
+            }
+            28% {
+                box-shadow: 0 0 30px yellow;
+            }
+            42% {
+                box-shadow: 0 0 30px green;
+            }
+            57% {
+                box-shadow: 0 0 30px blue;
+            }
+            71% {
+                box-shadow: 0 0 30px indigo;
+            }
+            85% {
+                box-shadow: 0 0 30px violet;
+            }
+            100% {
+                box-shadow: 0 0 30px red;
+            }
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(247, 0, 255, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .info-text {
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            color: #ff00ff;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 640px) {
+            .content {
+                padding: 2rem;
+                margin: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+
+    <div class="content">
+        <h1>GGlauncherV5</h1>
+        <a href='http://www.freevisitorcounters.com'>Free Counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=75758cddd8d56cc79c76c357d9dff363d3862c55'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1285045/t/10"></script>
+        <p class="info-text">how do i play?: scroll down till you see "stuff", just underneath it are a bunch of websites you can play on, when you click on one it will download and when it does go to your google drive and press "new", then press add file and add the site link (it looks something like "example.html"). now what you can do is go on ANY chromebook with u logged in and press the search button and type whatever website you downloaded (the file name) and youll see it pop up and say "google drive" beside it, now click enter or on the file and enjoy!</p>
+    </div>
+    <div class="content">
+        <h1>stuff</h1>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1R3oUHMkaiyNrqmPtL0d2K1ZgnZc6R64i&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=de29bcb9-7bb1-4595-9991-0bc44f61b555&amp;at=APvzH3pqepll1iTdbi7Ae5KMOPDc:1733623603323">1v1 (1v1.lol)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=14SDP1wTp5LmGAqeJucUVhe68sc3YhOX_&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=7e67571c-3436-49e4-a443-e7b83833c74a&amp;at=APvzH3qgxE0alQIJhu1SK1I0yC6A:1733552469171">Tunnel (abt:blanker)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=19LG_-xNDIUlC65gOmegZRlfdphEI8gWl&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=8d692aa7-78bf-4ec7-bf5c-f6f483e355bb&amp;at=APvzH3rRp6XVzyVqYBSCNNhWJ8hl:1733683391460">ThePizzaEdition (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1RlCUQ8bvnDODwgVPm8o6TlLSa0kR2d3l&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=ee526b95-4555-4575-9439-0bc70cd5c546&amp;at=APvzH3oCkeFZ1w6QqDBOypWw4Dz8:1733684037094">PLEXILE (games+proxy)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1Z3OwNTXTik6mxR3SBCNv6HyHUSE8EYEV&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=2c3c71e6-e4db-47e5-a69b-45733a3a32ee&amp;at=APvzH3rS0v0nZ0iwNcVpNTsCqzt3:1733623552443">pizzaedition (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1It9gur4Ke4CPLM66LK9oKhb45YhHlU39&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a6277d45-8dfd-4745-afe3-1a3750a0163a&amp;at=APvzH3okR34ZqHDfnRPxV5Aia0Of:1733684124952">lite (games+proxy)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1OJLmuHfwJRYZ-jdWI9IJFqKS4SnnWyev&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a88a302f-60c0-491b-82bd-29cf23a7d19e&amp;at=APvzH3oxzbuBsQYfiScdNcBN41Q7:1735435631724">freeze (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1dhjsy0lXbfACT6HZgWg2yX7YRhEynKJ8&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a5d84586-a9d2-4f2b-a544-7b228aeddf3b&amp;at=APvzH3qB7fvafISKfgySKMH1gX1T:1733623602691">eaglercraft (minecraft)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1OSf8rqlv9VoziOZLUgI_mHFfQZy35KEL&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=f1f6cc17-fa74-4f33-a156-96d342ae6b19&amp;at=APvzH3oOHiHkFb61qpKfL4WONLqd:1733684978402">glacier (web-OS)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1yv89jSeY7BQlmKelgR2tGFqVVDvy52l5&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=7e8eb081-abc2-4f74-97fa-e33cc46580bf&amp;at=APvzH3qPDxq2kCrCzjYVUlMJIZk0:1733685037315">nebula(games+proxy)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1juVJkqDf2Xv0RHlFpDVLfJF_VtSgdOZH&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a1d0fbb6-0c16-4d37-a76d-8ff1b9e736e3&amp;at=APvzH3o9Ptdo70lvtpA51Rmx8jFU:1733685109913">EXTHANG3R (unblocker)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1Pa5XdhFlNvRDpdlWENwICb-0Utm7u9ye&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=1eb45056-77f9-4125-9b89-cd77c65a4580&amp;at=APvzH3rk7U5uCyAB5Ve4u0bPK3_4:1733842538914">deadshot (deadshot.io)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1-wIKwby4tG20AhmaOIUZj0ZTZKWcq7Ba&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=ac722a16-76b8-4765-9589-ad97eaf75be3&amp;at=APvzH3rK72H35Poc0DWy7z1UizwE:1733847676780">platformerio (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1SbCtabGzlJ2psp4gzmQTNy-Ys55n44ga&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=2616e324-dbf1-49dc-a924-8c916731eb1a&amp;at=APvzH3pMDa97F_zuuOBYEbuLCJTH:1733848319829">1v1lol.me (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1FxaFFu5NW0JP_dKbdV8e2QpDgSDFpqmj&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=7e308280-9d2d-4eb6-bfd2-955108db301c&amp;at=APvzH3rUcG1CwYKhdpXAla6s9vBG:1733870412047">stickmanfighter (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1IwRW05P1bGd8c3xJZxj6UMgp35p7ZGYP&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=00d7f406-ea1f-4125-9593-2e00ac04cef6&amp;at=APvzH3oMtN01nj_IFpnuEn2Bupth:1733870349580">connectionsyt (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1FECyXkyk9VpkAAX8AalDiQQG0H8IGw6c&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a14086eb-6aac-4a39-ac37-b64a09edbfb2&amp;at=APvzH3q7w4MBQiJSyKeET0zBngjI:1733870257249">bulletbros (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1xxmMTNI8XyaYL5VMkxvo7JdMUnZnD10c&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=90652509-e0f7-4a5b-976c-f44115d4ef7b&amp;at=APvzH3pB2-FmLFFkCNUyn865yQif:1733870221626">iogames (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1M02Ph4Ku-jbvYm5JdYt57nNnQwrDvEBP&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=28eaeee4-cde7-45e7-af29-6e39403e3ee2&amp;at=APvzH3oPZlq2fu3ne4pK-XV7X8eW:1734545236843">emulatorjs (emulator)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1_wP-Plrqu5_H5mvLAKE74KL7Z1OEpJ3K&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=0008aa8a-b0a3-4d24-8c8a-a93d3c7e50b7&amp;at=APvzH3rSPlmnP2OXfsuubuMTdDU6:1735435926871">robloxunblocked (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1-9hx-FtrhsPpjP524plI5L2biYrJJRX0&amp;export=download&amp;authuser=1&amp;confirm=t&amp;uuid=a09e74ed-a791-415a-ab13-89b524e04ab5&amp;at=APvzH3rlEwphC0E0RUQqNmkHDQH7:1735437040385">robloxunblocked-topVAS (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=19oQFX8uZcOC4izkKMTbMQYTPYQq9XtOI&export=download&authuser=1&confirm=t&uuid=4d96fac0-0020-4d92-9d9c-f06a99b52ae8&at=APvzH3p6IU-wS2sJ2wpb0XbfJpBS:1736130315427">Clockwork (web-OS)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1ZkiEQVaLKRQ13YPicAkzj_Dg-9bbtbfo&export=download&authuser=1&confirm=t&uuid=70f44946-37fa-41e5-a408-332a8f605a49&at=AIrpjvOTGE9XO-4QWJ2HOmetJpZ6:1736481444077">Ducklit (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1UVTJdaOa0-FyJ0dmcezK8mQPFgOWGAiE&export=download&authuser=1&confirm=t&uuid=ff5b00db-46cf-4634-bff8-15f1032bef99&at=AIrpjvMETCltyt5NhUvhCIIW_kE_:1736582473647">US4 (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1zveP_HKrr2Fq6t-A5Q7awCzmDWwsJ7lA&export=download&authuser=1&confirm=t&uuid=8dbf46ae-6b2f-4877-b8b1-b27ce0abff3a&at=AIrpjvNcHgiNaGUSAbjWdkjxEI9J:1736583393389">ShadowV3 (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1AcpfKtHglw0umZKkJUkm9Px_Z8dGZNBn&export=download&authuser=1&confirm=t&uuid=443e43e0-a975-4477-b49f-ad2316d5e6d1&at=AIrpjvOVu2fFS8hKtr1LsZeU4Sox:1736584225992">ASmallWorldCup (games)</a>
+            <br>
+            <a href="https://drive.usercontent.google.com/download?id=1tnMWmvJ9HhcMVSQ16bnlFEJEHYhrdDBi&export=download&authuser=1&confirm=t&uuid=793a9563-7b9b-43a2-8d12-5cadcc326c4b&at=AIrpjvPOaBPrTx4ijewp---G-eMT:1736584986070">tbg95 (games)</a>
+            <br>
+    </div>
+    <div class="content">
+      <h1> AI </h1>
+     <iframe src="https://www.chatgot.io/chat/?utm_source=chatgot_www/"></iframe>
+    </div>
+</html>
