@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>.lw { font-size: 60px; }</style>
+        </head>
+        <body style="background-color:rgb(0, 0, 0);">
+            
+
+
+            <style>.lw { font-size: 60px; }</style>
+        
+        
+            
+
+
+            <style>.lw { font-size: 60px; }</style>
+        
+        
+            
+
+
+<h1 style="font-size:30px; color:rgb(0, 247, 255);"> US4 </h1>
+<br>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Embed Example</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  #fullscreen-iframe {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    border: none;
+  }
+  #fullscreen-button {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 120px;
+    z-index: 1;
+  }
+</style>
+
+
+
+<button id="fullscreen-button" onclick="openFullscreen()">open US4</button>
+
+<script>
+function openFullscreen() {
+  var width = 2000; // Default width
+  var height = 1100; // Default height
+
+  // Prompt user for custom width and height
+  var customWidth = 2000;
+  var customHeight = 850;
+
+  // Parse user input if valid
+  if (!isNaN(parseInt(customWidth)) && !isNaN(parseInt(customHeight))) {
+    width = parseInt(customWidth);
+    height = parseInt(customHeight);
+  }
+
+  // Calculate position to center iframe
+  var leftPosition = (screen.width - width) / 2;
+  var topPosition = (screen.height - height) / 2;
+
+  var newWindow = window.open('about:blank', '_blank', 'fullscreen=yes,width=' + width + ',height=' + height + ',left=' + leftPosition + ',top=' + topPosition);
+  if (newWindow) {
+    var content = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dynamic Embed</title><style>body, html {margin: 0;padding: 0;height: 100%;overflow: hidden;display: flex;justify-content: center;align-items: center;background-color: #f0f0f0;}#fullscreen-iframe {width: ' + width + 'px;height: ' + height + 'px;border: none;}</style></head><body><iframe id="fullscreen-iframe" src="https://zva-c.global.ssl.fastly.net/" allowfullscreen></iframe></body></html>';
+    newWindow.document.write(content);
+  } else {
+    alert('Your browser blocked opening a new window. Please allow pop-ups for "iready";)');
+  }
+}
+</script>
+
+
+
+            <script>// Write JavaScript here</script>
+        
+    
+
+            <script>// Write JavaScript here</script>
+        
+    
+
+            <script>// Write JavaScript here</script>
+        
+    
+</body>
